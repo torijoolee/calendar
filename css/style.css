@@ -1,0 +1,35 @@
+.calendar {
+  width: 400px;
+}
+.calendar header {
+  display: flex;
+  justify-content: space-between;
+}
+.calendar header select option {
+  background-color: white;
+}
+.calendar table {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.calendar thead tr {
+  width: 100%;
+}
+.calendar tbody tr {
+  text-align: center;
+}
+.calendar table td span {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  line-height: 40px;
+  border-radius: 50%;
+}
+.calendar table td span.active {
+  background-color: blue;
+  color: white;
+}
+.calendar table td span.inactive {
+  color: gray;
+}

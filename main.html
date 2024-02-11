@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script defer src="/js/main.js"></script>
+  </head>
+  <body>
+    <article class="calendar">
+      <header>
+        <button type="button" class="left" onclick="prevMonth()">전</button>
+        <div class="selects-wrap">
+          <select name="year" id="year" class="year"></select>
+          <select name="month" id="month" class="month">
+            <option value="1">1월</option>
+            <option value="2">2월</option>
+            <option value="3">3월</option>
+            <option value="4">4월</option>
+            <option value="5">5월</option>
+            <option value="6">6월</option>
+            <option value="7">7월</option>
+            <option value="8">8월</option>
+            <option value="9">9월</option>
+            <option value="10">10월</option>
+            <option value="11">11월</option>
+            <option value="12">12월</option>
+          </select>
+        </div>
+        <button type="button" class="right" onclick="nextMonth()">후</button>
+      </header>
+      <div class="dates-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">일</th>
+              <th scope="col">월</th>
+              <th scope="col">화</th>
+              <th scope="col">수</th>
+              <th scope="col">목</th>
+              <th scope="col">금</th>
+              <th scope="col">토</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <button type="button" onclick="goToday()">오늘</button>
+      </div>
+    </article>
+  </body>
+</html>
